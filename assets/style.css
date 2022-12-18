@@ -1,128 +1,308 @@
 * {
-    background-color: rgb(228, 211, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(247, 231, 214);
+}
 
-header {
+.header {
+    padding: 10px;
+    background-color: tan;
+    color: black;
     display: flex;
     justify-content: space-between;
-    background-color: tan;
+    align-items: center;
 }
 
-li {
-    padding: 4px;
-    margin: 0 8px;
-    border-bottom: 3px solid black;
-}
-.page-title {
+.header h1 {
+    color: black;
     background-color: tan;
-    font-size: 180%;
+    display: inline-block;
+    font-size: 48px;
 }
 
-.in-header ul {
+.header nav ul {
+    list-style-type: none;
     display: flex;
-    list-style: none;
 }
 
-a:link {
-    text-decoration: none;
+.header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 a {
     color: black;
+    font-weight: 900;
 }
 
-a:hover{
-    color: hotpink;
-}
-
-.head-image {
+.underNav {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0.5%;
     background-image: url(./Images/Landscape-for-top.jpg);
     background-size: cover;
     background-position: center;
-    height: 20%;
-    width: 100%;
     display: flex;
     align-items: flex-end;
     flex-direction: row-reverse;
-    height: 250px;
-    margin-bottom: 25px;
-    padding: 5px;
-    box-shadow: 10px; 
+    padding-bottom: 1%;
 }
 
-.main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-}
-
- .slogan {  
+.underNav ul {
     background-color: tan;
     color: black;
-    width: 145px;
-    position: absolute;
-}
-
-.about {
+    font-size: 30px;
     display: flex;
-    border-right: 5px;
-    padding: 4px;
-    margin: 0 8px;
+    align-items: flex-end;
 }
 
-.aside { 
-    background-color: slategray;
-    color: black;
-    border-right: 10px;
-}
-
-.about-me {
-    background-size: cover;
-    background-position: center;
-    height: 280px;
+.content {
+    height: 20%;
     width: 100%;
-    font-size: 45px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
 }
 
-.text {
-    color: black;
-    font-size: 175%;
-    margin-left: 15px;
-    font-style: oblique;
-    background-color: rgb(228, 211, 190);
-    border-left: 5px solid black;
-    padding-left: 1%; 
+.article {
+    width: 75%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    border-left: 10px solid black;
 }
 
-.work {
-    height: 250px;
-    width: 15%;
-    font-size: 45px;
-    border-right: 5px solid black;
+.content h2 {
+    height: 20%;
+    width: 25%;
+    text-align: right;
+    font-size: 300%;
+}
+.Work {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2%;
+    padding-bottom: 1%;
 }
 
-.body2 {
+.Work h2 {
+    font-size: 300%;
+    text-align: right;
+}
+
+.WorkTitle {
+    width: 25%;
+}
+
+.gallery {
+    width: 75%;
+    border-left: 10px solid black;
+}
+
+.OneRing {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0.5%;
     background-image: url(./Images/one-ring.jpg);
     background-size: cover;
     background-position: center;
-    height: auto;
-    width: 100%;
     display: flex;
+    align-items: flex-end;
+    padding-bottom: 2%;
 }
 
-.surf {
-    border-left: 5px solid black;
+.OneRing div {
     background-color: tan;
     color: black;
-    width: 145px;
-    height: 20%;
-    position: relative;
-    top: 190px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+.OneRing div small {
+    font-size: 50%;
+}
 
-@media screen and (max-width: 768px) {
-    
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4%;
+}
+
+.books {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0.5%;
+    background-image: url(./Images/books.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1%;
+}
+
+.books div {
+    background-color: tan;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hobbithole {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0.5%;
+    background-image: url(./Images/Hobbit-hole.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1%;
+}
+
+.hobbithole div {
+    background-color: tan;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.map {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0.5%;
+    background-image: url(./Images/map.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1%;
+}
+
+.map div {
+    background-color: tan;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.yellowdoor {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 0.5%;
+    background-image: url(./Images/yellow-door.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1%;
+}
+
+.yellowdoor div {
+    background-color: tan;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.footerMenu {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    border-left: 10px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerTitle {
+    width: 25%;
+    font-size: 300%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 990px) {
+    .header {
+        flex-direction: column;
     }
+
+    .header nav ul {
+        margin: 3% 0;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content h2 {
+        width: 100%;
+        text-align: center;
+        padding: 4%;
+    }
+
+    article {
+        width: 100%;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .galleryContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .work {
+        flex-direction: column;
+    }
+
+    .workTitle {
+        width: 100%;
+    }
+
+    .work h2 {
+        text-align: center;
+        padding: 3% 0;
+    }
+
+    .gallery {
+        width: 100%;
+        border: none;
+        padding: 3%;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: 5% 0;
+    }
+
+    .footerTitle {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerMenu {
+        width: 100%;
+        flex-direction: column;
+        border: none;
+    }
+
+    .footerMenu div {
+        margin-top: 3%;
+    }
+}
