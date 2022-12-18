@@ -1,13 +1,12 @@
-
+* {
+    background-color: rgb(228, 211, 190);
+}
 
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: slategray;
-    color: black;
-    text-shadow: 5px;
-    box-shadow: 0 0 10px;
+    background-color: tan;
 }
 
 li {
@@ -16,15 +15,13 @@ li {
     border-bottom: 3px solid black;
 }
 .page-title {
-    font-size: 150%;
-
+    background-color: tan;
+    font-size: 180%;
 }
 
 .in-header ul {
     display: flex;
-    gap: 20px;
     list-style: none;
-    margin-right: 15px;
 }
 
 a:link {
@@ -36,14 +33,22 @@ a {
 }
 
 a:hover{
-    color: white;
+    color: hotpink;
 }
 
 .head-image {
+    background-image: url(./Images/Landscape-for-top.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20%;
     width: 100%;
-    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    height: 250px;
+    margin-bottom: 25px;
     padding: 5px;
-    box-shadow: 10px;
+    box-shadow: 10px; 
 }
 
 .main-image {
@@ -53,13 +58,11 @@ a:hover{
     position: relative;
 }
 
-.slogan {
-    background-color: slategray;
+ .slogan {  
+    background-color: tan;
     color: black;
-    width: 190px;
+    width: 145px;
     position: absolute;
-    top: 400px;
-    right: 25px;
 }
 
 .about {
@@ -76,32 +79,42 @@ a:hover{
 }
 
 .about-me {
-    background-color: white;
-    color: black;
-    width: 150px;
-    max-height: 150px;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 100%;
     font-size: 45px;
-    margin-left: 50px;
-    border-right: 3px solid black;
-    padding: 10px;
 }
 
-.para {
-    background-color: white;
-}
-
-.gibberish {
+.text {
     color: black;
     font-size: 175%;
     margin-left: 15px;
     font-style: oblique;
+    background-color: rgb(228, 211, 190);
+    border-left: 5px solid black;
+    padding-left: 1%; 
 }
 
 .work {
-    width: 80%;
-    height: 500px;
+    /* display: flex; */
+    /* flex-direction: 20%; */
+    background-size: 20%;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    font-size: 45px;
+    border-right: 5px solid black;
 }
 
+.body2 {
+    background-image: url(./Images/one-ring.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
 .boxes {
     width: 50%;
     height: 150%;
@@ -112,33 +125,6 @@ a:hover{
     border-color: teal;
     box-shadow: 0 0 10px;
 }
-
-.surf {
-    background-color: slategray;
-    color: black;
-    font-size: 30px;
-    width: 158px;
-    height: 35px;
-    position: absolute;
-    top: 1350px;
-    left: 508px; 
-    border-style: solid;
-    border-width: 2px;
-    border-color: teal;
-    display: flex;
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
     }
